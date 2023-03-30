@@ -1,0 +1,9 @@
+@import url(Styles/background.css);
+@import url(Styles/header.css);
+@import url(Styles/main.css);
+@import url(Styles/footer.css);
+
+a {
+    color: #E4E5EA;
+    text-decoration: none;
+}

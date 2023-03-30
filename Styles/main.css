@@ -1,0 +1,107 @@
+main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 90px;
+}
+
+main > h1 {
+    width: 362px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 58px;
+    color: #E4E5EA;
+    margin: 0 0 30px 0;
+}
+
+h1 > span {
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    background: linear-gradient(92deg, #FCB045 27.14%, #FF3F78 121.36%), #E4E5EA;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+h1 > p {
+    padding-top: 30px;
+    color: #E4E5EA;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    width: 275px;
+    margin: 0;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+h2 {
+    width: 291px;
+    color: #E4E5EA;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: right;
+}
+
+h2 > span {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: right;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #FCB045 36.99%, #FD1D1D 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+}
+
+.pref {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-top: 40px;
+    gap: 20px;
+}
+
+.pref > section > span {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: right;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #E4E5EA;
+}
+
+.pref > section > p {
+    margin-top: 6px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    color: #E4E5EA;
+}
+
+h2 button {
+    margin-top: 82px;
+    font-family: 'Inter', sans-serif;
+    width: 262px;
+    height: 61px;
+    background-color: #4077F3;
+    color: #E4E5EA;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+}
+
+button {
+    cursor: pointer;
+}

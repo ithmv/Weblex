@@ -1,0 +1,96 @@
+footer {
+    display: flex;
+    gap: 52px;
+    justify-content: space-between;
+}
+
+footer p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #656566;
+    margin-bottom: 20px;
+}
+
+footer a {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 10px;
+} 
+
+.about, .menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.about {
+    width: 275px;
+}
+
+.menu {
+    width: 689px;
+}
+
+.sect {
+    display: flex;
+    gap: 52px;
+}
+
+footer .menu section {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .about section {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts {
+    display: flex;
+    text-align: right;
+    flex-direction: column;
+    gap: 20px;
+    width: 400px;
+}
+
+.contacts > .social {
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.contacts span, .contacts p {
+    color: #E4E5EA;
+}
+
+
+
+.social + p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: none;
+    margin: 0;
+}
+.contacts span {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: right;
+    margin: 0;
+}
+
+.contacts span:nth-child(3) {
+    text-decoration-line: underline;
+}
+
+.contacts section {
+    margin-top: 50px;
+}

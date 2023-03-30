@@ -1,0 +1,42 @@
+header {
+    display: flex;
+    margin-bottom: 90px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.logo {
+    margin: 0 52px 0 0;
+    cursor: pointer;
+}
+
+.logo > p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 12.19px;
+    color: rgba(228, 229, 234, 1);
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+    margin-right: 137px;
+}
+
+header a {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19.36px;
+}
+
+nav + a{
+    text-align: right;
+    margin-right: 47px;
+}
+
+.social {
+    display: flex;
+    gap: 30px;
+}
