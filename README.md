@@ -1,2 +1,2 @@
 # Weblex
-https://resonant-horse-2bb839.netlify.app/
+https://golden-lolly-a6a609.netlify.app/
