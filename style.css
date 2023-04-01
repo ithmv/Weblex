@@ -1,9 +1,506 @@
-@import url(Styles/background.css);
-@import url(Styles/header.css);
-@import url(Styles/main.css);
-@import url(Styles/footer.css);
-
 a {
     color: #E4E5EA;
     text-decoration: none;
+}
+
+body {
+    background: #0E1014;
+    max-width: 1440px;
+    margin: auto;
+}
+
+.wrapper {
+    max-width: 1140px;
+    margin: auto;
+
+}
+
+.balls {
+    z-index: -1;
+    transform: translateY(-57px);
+    position: absolute;
+}
+
+.purpleBall {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    left: 868px;
+    top: -2px;
+    background: radial-gradient(64% 64% at 27.25% 26.5%, rgba(236, 208, 255, 0.64) 0%, rgba(161, 93, 207, 0.24) 59.67%, rgba(118, 49, 164, 0.208) 78.59%, rgba(86, 24, 128, 0.232) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    box-shadow: 3px 6px 27px -10px rgba(177, 118, 217, 0.25);
+    filter: blur(5px);
+    backdrop-filter: blur(2px);
+}
+
+.purpleLight {
+    position: absolute;
+    border-radius: 50%;
+    width: 259px;
+    height: 259px;
+    left: 602px;
+    top: -154px;
+    background: #833AB4;
+    opacity: 0.5;
+    filter: blur(196px);
+}
+
+.redLight {
+    position: absolute;
+    width: 311px;
+    height: 311px;
+    left: -102px;
+    top: 251px;
+    background: #961A1A;
+    opacity: 0.5;
+    filter: blur(196px);
+}
+
+.redBallS {
+    position: absolute;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    left: 851px;
+    top: 547px;
+    background: radial-gradient(64% 64% at 27.25% 26.5%, rgba(255, 208, 208, 0.48) 0%, rgba(212, 93, 93, 0.248) 59.67%, rgba(167, 49, 49, 0.264) 78.59%, rgba(130, 25, 25, 0.232) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
+    filter: blur(2.5px);
+    backdrop-filter: blur(2px);
+}
+
+.redBallB {
+    position: absolute;
+    width: 83px;
+    height: 83px;
+    left: 519px;
+    top: 83px;
+    border-radius: 50%;
+    background: radial-gradient(64% 64% at 27.25% 26.5%, rgba(255, 208, 208, 0.536) 0%, rgba(212, 93, 93, 0.264) 59.67%, rgba(167, 49, 49, 0.248) 78.59%, rgba(130, 25, 25, 0.248) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
+    backdrop-filter: blur(2px);
+}
+
+
+/* BACKGROUND
+HEADER */
+
+
+header {
+    display: flex;
+    margin-bottom: 90px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.logo {
+    margin: 0 52px 0 0;
+    cursor: pointer;
+}
+
+.logo > p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 12.19px;
+    color: rgba(228, 229, 234, 1);
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+    margin-right: 137px;
+}
+
+header a {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19.36px;
+}
+
+nav + a{
+    text-align: right;
+    margin-right: 47px;
+}
+
+.social {
+    display: flex;
+    gap: 30px;
+}
+
+/* HEADER
+MAIN */
+
+main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 90px;
+}
+
+main > h1 {
+    width: 362px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 58px;
+    color: #E4E5EA;
+    margin: 0 0 30px 0;
+}
+
+h1 > span {
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    background: linear-gradient(92deg, #FCB045 27.14%, #FF3F78 121.36%), #E4E5EA;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+h1 > p {
+    padding-top: 30px;
+    color: #E4E5EA;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    width: 275px;
+    margin: 0;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+h2 {
+    width: 291px;
+    color: #E4E5EA;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: right;
+}
+
+h2 > span {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: right;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #FCB045 36.99%, #FD1D1D 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+}
+
+h2 span#mob {
+    display: none;
+}
+
+.pref {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-top: 40px;
+    gap: 20px;
+}
+
+.pref > section > span {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: right;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #E4E5EA;
+}
+
+.pref > section > p {
+    margin-top: 6px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    color: #E4E5EA;
+}
+
+h2 button {
+    margin-top: 82px;
+    font-family: 'Inter', sans-serif;
+    width: 262px;
+    height: 61px;
+    background-color: #4077F3;
+    color: #E4E5EA;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+}
+
+button {
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    gap: 52px;
+    justify-content: space-between;
+}
+
+footer p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #656566;
+    margin-bottom: 20px;
+}
+
+footer a {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 10px;
+} 
+
+.about, .menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.about {
+    width: 275px;
+}
+
+.menu {
+    width: 689px;
+}
+
+.sect {
+    display: flex;
+    gap: 52px;
+}
+
+footer .menu section {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .about section {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts {
+    display: flex;
+    text-align: right;
+    flex-direction: column;
+    gap: 20px;
+    width: 400px;
+}
+
+.contacts > .social {
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.contacts span, .contacts p {
+    color: #E4E5EA;
+}
+
+.social + p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: none;
+    margin: 0;
+}
+
+.contacts span {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: right;
+    margin: 0;
+}
+
+.contacts span:nth-child(3) {
+    text-decoration-line: underline;
+}
+
+.contacts section {
+    margin-top: 50px;
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+    .wrapper {
+        min-width: 320px;
+        max-width: 480px;
+    }
+
+    .purpleLight {
+        width: 200px;
+        left: 80px;
+    }
+
+    .redLight {
+        width: 200px;
+        left: -50px;
+        top: 350px;
+    }
+
+    .redBallB {
+        display: none;
+    }
+
+    .redBallS {
+        width: 43px;
+        height: 43px;
+        left: 29px;
+        top: 610px;
+        background: radial-gradient(64% 64% at 27.25% 26.5%, rgba(255, 208, 208, 0.536) 0%, rgba(212, 93, 93, 0.264) 59.67%, rgba(167, 49, 49, 0.248) 78.59%, rgba(130, 25, 25, 0.248) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+        box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
+        backdrop-filter: blur(2px);
+    }
+
+    .logo, nav + a, header > .social {
+        display: none;
+    }
+
+    .purpleBall {
+        display: none;
+    }
+
+    /* BACKGROUND
+    HEADER */
+
+    header {
+        margin-top: 0;
+    }
+
+    nav {
+        padding: 20px 16px;
+        background-color: black;
+        gap: 14px;
+        margin: 0;
+        width: 100%;
+        justify-content: center
+    }
+
+    nav a {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+    }
+
+    nav a:nth-child(5) {
+        display: none;
+    }
+
+    /* HEADER
+    MAIN */
+
+    main {
+        margin: 0;
+        transform: translateY(-40px);
+    }
+
+    main > h1 {
+        width: 362px;
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 44px;
+        margin-left: 14px;
+    }
+
+    h1 > p {
+        padding-top: 30px;
+        color: #E4E5EA;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    h2 {
+        margin-left: 15px;
+        text-align: left;
+    }
+
+    h2 section > span,
+    h2 section > p {
+        display: none;
+    }
+
+    h2 section > span#mob {
+        font-family: 'Montserrat', sans-serif;
+        display: block;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        text-align: left;
+        padding-top: 16px;
+    }
+
+    span#mob > span {
+        background: linear-gradient(90deg, #FCB045 36.99%, #FD1D1D 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    .pref {
+        justify-items: start;
+        gap: 0;
+        margin-bottom: 35px;
+    }
+
+
+    button {
+        display: none;
+    }
+
+    footer {
+        background: #0E1014;
+        flex-wrap: wrap;
+        padding: 45px 15px 15px 5px;
+        text-align: left;
+    }
+
+    .contacts {
+        text-align: left;
+        margin-bottom: 60px;
+        gap: 10px;
+    }
+
+    .contacts p,  .contacts a {
+        margin: 0;
+    }
+
+    .contacts p {
+        font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    }
+
+    .contacts > .social {
+        gap: 10px;
+        display: flex;
+        justify-content: flex-start;
+    }
 }
