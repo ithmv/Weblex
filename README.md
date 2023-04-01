@@ -1,4 +1,4 @@
 # Weblex
 https://golden-lolly-a6a609.netlify.app/
 
-Вёрстка в сумме заняла часа 2
+Вёрстка в суммарно заняла часа 2
